@@ -1,8 +1,8 @@
 import { Body, Controller, Delete, Get, HttpException, Param, Patch, Post, UsePipes, ValidationPipe } from "@nestjs/common";
-import { UsersService } from "../users.service";
-import { createUserDto } from "./CreateUser.dto";
+import { UsersService } from "./users.service";
+import { createUserDto } from "./dto/CreateUser.dto";
 import mongoose from "mongoose";
-import { UpdateUserDto } from "./UpdateUser.dto";
+import { UpdateUserDto } from "./dto/UpdateUser.dto";
 
 @Controller('users')
 export class UsersController {

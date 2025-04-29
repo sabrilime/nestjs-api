@@ -5,8 +5,6 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 
 @Module({
   imports: [
-    //MongooseModule.forRoot('mongodb+srv://sabri:Sab@cluster0.gmq3mhz.mongodb.net/nest?retryWrites=true&w=majority&appName=Cluster0'),
-    
     ConfigModule.forRoot({
       isGlobal: true, // makes ConfigService available globally
     }),
